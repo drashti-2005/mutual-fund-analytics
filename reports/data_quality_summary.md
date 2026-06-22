@@ -1,6 +1,6 @@
 # Data Quality Summary Report
 
-**Generated:** 2026-06-22 17:02:03  
+**Generated:** 2026-06-22 19:26:29  
 **Pipeline:** data_ingestion.py v1.0.0  
 **Project:** Bluestock Fintech — Mutual Fund Analytics  
 
@@ -59,6 +59,35 @@ No data type issues detected.
 |--------|--------------|-----------|-------------|-------------|
 | scheme_code | 0 | 0.00% | 119092.0 | 119092.0 |
 | nav | 805 | 22.49% | 589.2446 | 7262.0665 |
+
+---
+
+## Dataset: `fund_master`
+
+| Metric | Value |
+|--------|-------|
+| Total Rows | 31 |
+| Total Columns | 10 |
+| Duplicate Rows | 0 |
+| Numeric Columns | 3 |
+| Object Columns | 7 |
+| Datetime Columns | 0 |
+
+### Missing Values
+
+No missing values detected. Dataset is complete.
+
+### Data Type Issues
+
+No data type issues detected.
+
+### Outlier Detection (IQR Method)
+
+| Column | Outlier Count | Outlier % | Lower Fence | Upper Fence |
+|--------|--------------|-----------|-------------|-------------|
+| scheme_code | 3 | 9.68% | 117997.75 | 122139.75 |
+| aum_cr | 0 | 0.00% | -32693.9125 | 98977.9875 |
+| expense_ratio | 0 | 0.00% | -0.2425 | 1.3775 |
 
 ---
 
@@ -202,11 +231,55 @@ No data type issues detected.
 
 ---
 
+## AMFI Scheme Code Validation
+
+| Check | Result |
+|-------|--------|
+| Scheme codes in fund_master | 28 |
+| Scheme codes in nav_history | 6 |
+| Missing from nav_history | 22 |
+| Duplicate codes in fund_master | 3 |
+
+### Scheme Codes Missing from NAV History
+
+| Scheme Code |
+|-------------|
+| 100119 |
+| 118825 |
+| 119028 |
+| 119189 |
+| 119233 |
+| 119597 |
+| 119598 |
+| 119683 |
+| 119780 |
+| 119822 |
+| 119823 |
+| 120178 |
+| 120465 |
+| 120505 |
+| 120573 |
+| 120586 |
+| 120587 |
+| 120684 |
+| 120716 |
+| 120819 |
+| 120828 |
+| 125354 |
+
+### Duplicate Scheme Codes in Fund Master
+
+| Scheme Code | Count |
+|-------------|-------|
+| 120503 | 2 |
+| 119598 | 2 |
+| 119551 | 2 |
+
 ## Overall Summary
 
 | Metric | Value |
 |--------|-------|
-| Datasets Profiled | 7 |
-| Total Records | 39,764 |
+| Datasets Profiled | 8 |
+| Total Records | 39,795 |
 | Total Missing Values | 0 |
 | Total Duplicate Rows | 0 |

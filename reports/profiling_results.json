@@ -159,6 +159,113 @@
       }
     }
   },
+  "fund_master": {
+    "name": "fund_master",
+    "shape": {
+      "rows": 31,
+      "columns": 10
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "scheme_code",
+      "aum_cr",
+      "expense_ratio"
+    ],
+    "object_columns": [
+      "scheme_name",
+      "fund_house",
+      "scheme_type",
+      "scheme_category",
+      "scheme_sub_category",
+      "risk_grade",
+      "launch_date"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "scheme_code": {
+        "outlier_count": 3,
+        "lower_fence": 117997.75,
+        "upper_fence": 122139.75,
+        "outlier_pct": 9.68
+      },
+      "aum_cr": {
+        "outlier_count": 0,
+        "lower_fence": -32693.9125,
+        "upper_fence": 98977.9875,
+        "outlier_pct": 0.0
+      },
+      "expense_ratio": {
+        "outlier_count": 0,
+        "lower_fence": -0.2425,
+        "upper_fence": 1.3775,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "scheme_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "scheme_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "fund_house": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_type": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_sub_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "risk_grade": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "aum_cr": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "expense_ratio": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "launch_date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      }
+    }
+  },
   "hdfc_top100_nav": {
     "name": "hdfc_top100_nav",
     "shape": {
