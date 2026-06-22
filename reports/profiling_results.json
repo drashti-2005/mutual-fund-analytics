@@ -1,0 +1,562 @@
+{
+  "all_funds_nav": {
+    "name": "all_funds_nav",
+    "shape": {
+      "rows": 19882,
+      "columns": 7
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "scheme_code",
+      "nav"
+    ],
+    "object_columns": [
+      "date",
+      "fund_house",
+      "scheme_name",
+      "scheme_category",
+      "scheme_type"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "scheme_code": {
+        "outlier_count": 3105,
+        "lower_fence": 116468.5,
+        "upper_fence": 123464.5,
+        "outlier_pct": 15.62
+      },
+      "nav": {
+        "outlier_count": 2774,
+        "lower_fence": -125.0891,
+        "upper_fence": 310.5078,
+        "outlier_pct": 13.95
+      }
+    },
+    "missing_summary": {
+      "scheme_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "nav": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "fund_house": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_type": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      }
+    }
+  },
+  "axis_bluechip_nav": {
+    "name": "axis_bluechip_nav",
+    "shape": {
+      "rows": 3579,
+      "columns": 7
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "scheme_code",
+      "nav"
+    ],
+    "object_columns": [
+      "date",
+      "fund_house",
+      "scheme_name",
+      "scheme_category",
+      "scheme_type"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "scheme_code": {
+        "outlier_count": 0,
+        "lower_fence": 119092.0,
+        "upper_fence": 119092.0,
+        "outlier_pct": 0.0
+      },
+      "nav": {
+        "outlier_count": 805,
+        "lower_fence": 589.2446,
+        "upper_fence": 7262.0665,
+        "outlier_pct": 22.49
+      }
+    },
+    "missing_summary": {
+      "scheme_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "nav": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "fund_house": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_type": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      }
+    }
+  },
+  "hdfc_top100_nav": {
+    "name": "hdfc_top100_nav",
+    "shape": {
+      "rows": 3105,
+      "columns": 7
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "scheme_code",
+      "nav"
+    ],
+    "object_columns": [
+      "date",
+      "fund_house",
+      "scheme_name",
+      "scheme_category",
+      "scheme_type"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "scheme_code": {
+        "outlier_count": 0,
+        "lower_fence": 125497.0,
+        "upper_fence": 125497.0,
+        "outlier_pct": 0.0
+      },
+      "nav": {
+        "outlier_count": 0,
+        "lower_fence": -95.5283,
+        "upper_fence": 266.6733,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "scheme_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "nav": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "fund_house": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_type": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      }
+    }
+  },
+  "icici_bluechip_nav": {
+    "name": "icici_bluechip_nav",
+    "shape": {
+      "rows": 3321,
+      "columns": 7
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "scheme_code",
+      "nav"
+    ],
+    "object_columns": [
+      "date",
+      "fund_house",
+      "scheme_name",
+      "scheme_category",
+      "scheme_type"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "scheme_code": {
+        "outlier_count": 0,
+        "lower_fence": 120503.0,
+        "upper_fence": 120503.0,
+        "outlier_pct": 0.0
+      },
+      "nav": {
+        "outlier_count": 0,
+        "lower_fence": -36.9094,
+        "upper_fence": 147.6557,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "scheme_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "nav": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "fund_house": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_type": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      }
+    }
+  },
+  "kotak_bluechip_nav": {
+    "name": "kotak_bluechip_nav",
+    "shape": {
+      "rows": 3315,
+      "columns": 7
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "scheme_code",
+      "nav"
+    ],
+    "object_columns": [
+      "date",
+      "fund_house",
+      "scheme_name",
+      "scheme_category",
+      "scheme_type"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "scheme_code": {
+        "outlier_count": 0,
+        "lower_fence": 120841.0,
+        "upper_fence": 120841.0,
+        "outlier_pct": 0.0
+      },
+      "nav": {
+        "outlier_count": 0,
+        "lower_fence": -103.1184,
+        "upper_fence": 294.5096,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "scheme_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "nav": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "fund_house": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_type": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      }
+    }
+  },
+  "nippon_largecap_nav": {
+    "name": "nippon_largecap_nav",
+    "shape": {
+      "rows": 3312,
+      "columns": 7
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "scheme_code",
+      "nav"
+    ],
+    "object_columns": [
+      "date",
+      "fund_house",
+      "scheme_name",
+      "scheme_category",
+      "scheme_type"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "scheme_code": {
+        "outlier_count": 0,
+        "lower_fence": 118632.0,
+        "upper_fence": 118632.0,
+        "outlier_pct": 0.0
+      },
+      "nav": {
+        "outlier_count": 0,
+        "lower_fence": -27.8945,
+        "upper_fence": 113.1308,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "scheme_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "nav": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "fund_house": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_type": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      }
+    }
+  },
+  "sbi_bluechip_nav": {
+    "name": "sbi_bluechip_nav",
+    "shape": {
+      "rows": 3250,
+      "columns": 7
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "scheme_code",
+      "nav"
+    ],
+    "object_columns": [
+      "date",
+      "fund_house",
+      "scheme_name",
+      "scheme_category",
+      "scheme_type"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "scheme_code": {
+        "outlier_count": 0,
+        "lower_fence": 119551.0,
+        "upper_fence": 119551.0,
+        "outlier_pct": 0.0
+      },
+      "nav": {
+        "outlier_count": 0,
+        "lower_fence": 52.3678,
+        "upper_fence": 200.6905,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "scheme_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "nav": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "fund_house": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "scheme_type": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      }
+    }
+  }
+}
