@@ -1,57 +1,71 @@
 {
-  "all_funds_nav": {
-    "name": "all_funds_nav",
+  "01_fund_master": {
+    "name": "01_fund_master",
     "shape": {
-      "rows": 19882,
-      "columns": 7
+      "rows": 40,
+      "columns": 15
     },
     "duplicate_count": 0,
     "numeric_columns": [
-      "scheme_code",
-      "nav"
+      "amfi_code",
+      "expense_ratio_pct",
+      "exit_load_pct",
+      "min_sip_amount",
+      "min_lumpsum_amount"
     ],
     "object_columns": [
-      "date",
       "fund_house",
       "scheme_name",
-      "scheme_category",
-      "scheme_type"
+      "category",
+      "sub_category",
+      "plan",
+      "launch_date",
+      "benchmark",
+      "fund_manager",
+      "risk_category",
+      "sebi_category_code"
     ],
     "datetime_columns": [],
     "dtype_issues": [],
     "columns_below_threshold": [],
     "outlier_info": {
-      "scheme_code": {
-        "outlier_count": 3105,
-        "lower_fence": 116468.5,
-        "upper_fence": 123464.5,
-        "outlier_pct": 15.62
+      "amfi_code": {
+        "outlier_count": 17,
+        "lower_fence": 115318.5,
+        "upper_fence": 124156.5,
+        "outlier_pct": 42.5
       },
-      "nav": {
-        "outlier_count": 2774,
-        "lower_fence": -125.0891,
-        "upper_fence": 310.5078,
-        "outlier_pct": 13.95
+      "expense_ratio_pct": {
+        "outlier_count": 0,
+        "lower_fence": -0.3412,
+        "upper_fence": 2.6688,
+        "outlier_pct": 0.0
+      },
+      "exit_load_pct": {
+        "outlier_count": 8,
+        "lower_fence": 1.0,
+        "upper_fence": 1.0,
+        "outlier_pct": 20.0
+      },
+      "min_sip_amount": {
+        "outlier_count": 0,
+        "lower_fence": 500.0,
+        "upper_fence": 500.0,
+        "outlier_pct": 0.0
+      },
+      "min_lumpsum_amount": {
+        "outlier_count": 4,
+        "lower_fence": 1000.0,
+        "upper_fence": 1000.0,
+        "outlier_pct": 10.0
       }
     },
     "missing_summary": {
-      "scheme_code": {
+      "amfi_code": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "int64"
-      },
-      "date": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "nav": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "float64"
       },
       "fund_house": {
         "missing_count": 0,
@@ -65,244 +79,113 @@
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "scheme_category": {
+      "category": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "scheme_type": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      }
-    }
-  },
-  "axis_bluechip_nav": {
-    "name": "axis_bluechip_nav",
-    "shape": {
-      "rows": 3579,
-      "columns": 7
-    },
-    "duplicate_count": 0,
-    "numeric_columns": [
-      "scheme_code",
-      "nav"
-    ],
-    "object_columns": [
-      "date",
-      "fund_house",
-      "scheme_name",
-      "scheme_category",
-      "scheme_type"
-    ],
-    "datetime_columns": [],
-    "dtype_issues": [],
-    "columns_below_threshold": [],
-    "outlier_info": {
-      "scheme_code": {
-        "outlier_count": 0,
-        "lower_fence": 119092.0,
-        "upper_fence": 119092.0,
-        "outlier_pct": 0.0
-      },
-      "nav": {
-        "outlier_count": 805,
-        "lower_fence": 589.2446,
-        "upper_fence": 7262.0665,
-        "outlier_pct": 22.49
-      }
-    },
-    "missing_summary": {
-      "scheme_code": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "int64"
-      },
-      "date": {
+      "sub_category": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "nav": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "float64"
-      },
-      "fund_house": {
+      "plan": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
-      },
-      "scheme_name": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_category": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_type": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      }
-    }
-  },
-  "fund_master": {
-    "name": "fund_master",
-    "shape": {
-      "rows": 31,
-      "columns": 10
-    },
-    "duplicate_count": 0,
-    "numeric_columns": [
-      "scheme_code",
-      "aum_cr",
-      "expense_ratio"
-    ],
-    "object_columns": [
-      "scheme_name",
-      "fund_house",
-      "scheme_type",
-      "scheme_category",
-      "scheme_sub_category",
-      "risk_grade",
-      "launch_date"
-    ],
-    "datetime_columns": [],
-    "dtype_issues": [],
-    "columns_below_threshold": [],
-    "outlier_info": {
-      "scheme_code": {
-        "outlier_count": 3,
-        "lower_fence": 117997.75,
-        "upper_fence": 122139.75,
-        "outlier_pct": 9.68
-      },
-      "aum_cr": {
-        "outlier_count": 0,
-        "lower_fence": -32693.9125,
-        "upper_fence": 98977.9875,
-        "outlier_pct": 0.0
-      },
-      "expense_ratio": {
-        "outlier_count": 0,
-        "lower_fence": -0.2425,
-        "upper_fence": 1.3775,
-        "outlier_pct": 0.0
-      }
-    },
-    "missing_summary": {
-      "scheme_code": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "int64"
-      },
-      "scheme_name": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "fund_house": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_type": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_category": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_sub_category": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "risk_grade": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "aum_cr": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "float64"
-      },
-      "expense_ratio": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "float64"
       },
       "launch_date": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
+      },
+      "benchmark": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "expense_ratio_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "exit_load_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "min_sip_amount": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "min_lumpsum_amount": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "fund_manager": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "risk_category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "sebi_category_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
       }
     }
   },
-  "hdfc_top100_nav": {
-    "name": "hdfc_top100_nav",
+  "02_nav_history": {
+    "name": "02_nav_history",
     "shape": {
-      "rows": 3105,
-      "columns": 7
+      "rows": 46000,
+      "columns": 3
     },
     "duplicate_count": 0,
     "numeric_columns": [
-      "scheme_code",
+      "amfi_code",
       "nav"
     ],
     "object_columns": [
-      "date",
-      "fund_house",
-      "scheme_name",
-      "scheme_category",
-      "scheme_type"
+      "date"
     ],
     "datetime_columns": [],
     "dtype_issues": [],
     "columns_below_threshold": [],
     "outlier_info": {
-      "scheme_code": {
-        "outlier_count": 0,
-        "lower_fence": 125497.0,
-        "upper_fence": 125497.0,
-        "outlier_pct": 0.0
+      "amfi_code": {
+        "outlier_count": 19550,
+        "lower_fence": 115318.5,
+        "upper_fence": 124156.5,
+        "outlier_pct": 42.5
       },
       "nav": {
-        "outlier_count": 0,
-        "lower_fence": -95.5283,
-        "upper_fence": 266.6733,
-        "outlier_pct": 0.0
+        "outlier_count": 3494,
+        "lower_fence": -217.582,
+        "upper_fence": 547.091,
+        "outlier_pct": 7.6
       }
     },
     "missing_summary": {
-      "scheme_code": {
+      "amfi_code": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
@@ -319,6 +202,54 @@
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "float64"
+      }
+    }
+  },
+  "03_aum_by_fund_house": {
+    "name": "03_aum_by_fund_house",
+    "shape": {
+      "rows": 90,
+      "columns": 5
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "aum_lakh_crore",
+      "aum_crore",
+      "num_schemes"
+    ],
+    "object_columns": [
+      "date",
+      "fund_house"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "aum_lakh_crore": {
+        "outlier_count": 5,
+        "lower_fence": -2.2,
+        "upper_fence": 10.4,
+        "outlier_pct": 5.56
+      },
+      "aum_crore": {
+        "outlier_count": 5,
+        "lower_fence": -220000.0,
+        "upper_fence": 1040000.0,
+        "outlier_pct": 5.56
+      },
+      "num_schemes": {
+        "outlier_count": 0,
+        "lower_fence": -55.0,
+        "upper_fence": 345.0,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
       },
       "fund_house": {
         "missing_count": 0,
@@ -326,19 +257,483 @@
         "completeness_pct": 100.0,
         "dtype": "object"
       },
+      "aum_lakh_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "aum_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "num_schemes": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      }
+    }
+  },
+  "04_monthly_sip_inflows": {
+    "name": "04_monthly_sip_inflows",
+    "shape": {
+      "rows": 48,
+      "columns": 6
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "sip_inflow_crore",
+      "active_sip_accounts_crore",
+      "new_sip_accounts_lakh",
+      "sip_aum_lakh_crore",
+      "yoy_growth_pct"
+    ],
+    "object_columns": [
+      "month"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "sip_inflow_crore": {
+        "outlier_count": 0,
+        "lower_fence": -4770.125,
+        "upper_fence": 44372.875,
+        "outlier_pct": 0.0
+      },
+      "active_sip_accounts_crore": {
+        "outlier_count": 0,
+        "lower_fence": 2.825,
+        "upper_fence": 11.585,
+        "outlier_pct": 0.0
+      },
+      "new_sip_accounts_lakh": {
+        "outlier_count": 2,
+        "lower_fence": 7.5938,
+        "upper_fence": 10.7437,
+        "outlier_pct": 4.17
+      },
+      "sip_aum_lakh_crore": {
+        "outlier_count": 0,
+        "lower_fence": -1.3125,
+        "upper_fence": 17.6275,
+        "outlier_pct": 0.0
+      },
+      "yoy_growth_pct": {
+        "outlier_count": 0,
+        "lower_fence": -10.5988,
+        "upper_fence": 71.6512,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "month": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "sip_inflow_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "active_sip_accounts_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "new_sip_accounts_lakh": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "sip_aum_lakh_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "yoy_growth_pct": {
+        "missing_count": 12,
+        "missing_pct": 25.0,
+        "completeness_pct": 75.0,
+        "dtype": "float64"
+      }
+    }
+  },
+  "05_category_inflows": {
+    "name": "05_category_inflows",
+    "shape": {
+      "rows": 144,
+      "columns": 3
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "net_inflow_crore"
+    ],
+    "object_columns": [
+      "month",
+      "category"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "net_inflow_crore": {
+        "outlier_count": 12,
+        "lower_fence": -3452.875,
+        "upper_fence": 10558.125,
+        "outlier_pct": 8.33
+      }
+    },
+    "missing_summary": {
+      "month": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "net_inflow_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      }
+    }
+  },
+  "06_industry_folio_count": {
+    "name": "06_industry_folio_count",
+    "shape": {
+      "rows": 21,
+      "columns": 6
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "total_folios_crore",
+      "equity_folios_crore",
+      "debt_folios_crore",
+      "hybrid_folios_crore",
+      "others_folios_crore"
+    ],
+    "object_columns": [
+      "month"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "total_folios_crore": {
+        "outlier_count": 0,
+        "lower_fence": 3.015,
+        "upper_fence": 36.415,
+        "outlier_pct": 0.0
+      },
+      "equity_folios_crore": {
+        "outlier_count": 0,
+        "lower_fence": 2.12,
+        "upper_fence": 25.48,
+        "outlier_pct": 0.0
+      },
+      "debt_folios_crore": {
+        "outlier_count": 0,
+        "lower_fence": 0.44,
+        "upper_fence": 5.08,
+        "outlier_pct": 0.0
+      },
+      "hybrid_folios_crore": {
+        "outlier_count": 0,
+        "lower_fence": 0.18,
+        "upper_fence": 2.18,
+        "outlier_pct": 0.0
+      },
+      "others_folios_crore": {
+        "outlier_count": 0,
+        "lower_fence": 0.29,
+        "upper_fence": 3.65,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "month": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "total_folios_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "equity_folios_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "debt_folios_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "hybrid_folios_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "others_folios_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      }
+    }
+  },
+  "07_scheme_performance": {
+    "name": "07_scheme_performance",
+    "shape": {
+      "rows": 40,
+      "columns": 19
+    },
+    "duplicate_count": 0,
+    "numeric_columns": [
+      "amfi_code",
+      "return_1yr_pct",
+      "return_3yr_pct",
+      "return_5yr_pct",
+      "benchmark_3yr_pct",
+      "alpha",
+      "beta",
+      "sharpe_ratio",
+      "sortino_ratio",
+      "std_dev_ann_pct",
+      "max_drawdown_pct",
+      "aum_crore",
+      "expense_ratio_pct",
+      "morningstar_rating"
+    ],
+    "object_columns": [
+      "scheme_name",
+      "fund_house",
+      "category",
+      "plan",
+      "risk_grade"
+    ],
+    "datetime_columns": [],
+    "dtype_issues": [],
+    "columns_below_threshold": [],
+    "outlier_info": {
+      "amfi_code": {
+        "outlier_count": 17,
+        "lower_fence": 115318.5,
+        "upper_fence": 124156.5,
+        "outlier_pct": 42.5
+      },
+      "return_1yr_pct": {
+        "outlier_count": 3,
+        "lower_fence": 4.7487,
+        "upper_fence": 23.3788,
+        "outlier_pct": 7.5
+      },
+      "return_3yr_pct": {
+        "outlier_count": 7,
+        "lower_fence": 6.2638,
+        "upper_fence": 21.6538,
+        "outlier_pct": 17.5
+      },
+      "return_5yr_pct": {
+        "outlier_count": 0,
+        "lower_fence": 4.4725,
+        "upper_fence": 25.4525,
+        "outlier_pct": 0.0
+      },
+      "benchmark_3yr_pct": {
+        "outlier_count": 5,
+        "lower_fence": 4.5625,
+        "upper_fence": 20.9025,
+        "outlier_pct": 12.5
+      },
+      "alpha": {
+        "outlier_count": 0,
+        "lower_fence": -0.3313,
+        "upper_fence": 2.9188,
+        "outlier_pct": 0.0
+      },
+      "beta": {
+        "outlier_count": 6,
+        "lower_fence": 0.725,
+        "upper_fence": 1.165,
+        "outlier_pct": 15.0
+      },
+      "sharpe_ratio": {
+        "outlier_count": 6,
+        "lower_fence": 0.685,
+        "upper_fence": 1.165,
+        "outlier_pct": 15.0
+      },
+      "sortino_ratio": {
+        "outlier_count": 5,
+        "lower_fence": 0.7188,
+        "upper_fence": 2.1887,
+        "outlier_pct": 12.5
+      },
+      "std_dev_ann_pct": {
+        "outlier_count": 6,
+        "lower_fence": 6.5,
+        "upper_fence": 26.5,
+        "outlier_pct": 15.0
+      },
+      "max_drawdown_pct": {
+        "outlier_count": 0,
+        "lower_fence": -41.2738,
+        "upper_fence": 1.9563,
+        "outlier_pct": 0.0
+      },
+      "aum_crore": {
+        "outlier_count": 0,
+        "lower_fence": -13686.25,
+        "upper_fence": 69211.75,
+        "outlier_pct": 0.0
+      },
+      "expense_ratio_pct": {
+        "outlier_count": 0,
+        "lower_fence": -0.3412,
+        "upper_fence": 2.6688,
+        "outlier_pct": 0.0
+      },
+      "morningstar_rating": {
+        "outlier_count": 0,
+        "lower_fence": 2.5,
+        "upper_fence": 6.5,
+        "outlier_pct": 0.0
+      }
+    },
+    "missing_summary": {
+      "amfi_code": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
       "scheme_name": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "scheme_category": {
+      "fund_house": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "scheme_type": {
+      "category": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "plan": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "return_1yr_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "return_3yr_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "return_5yr_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "benchmark_3yr_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "alpha": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "beta": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "sharpe_ratio": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "sortino_ratio": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "std_dev_ann_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "max_drawdown_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "aum_crore": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "expense_ratio_pct": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "float64"
+      },
+      "morningstar_rating": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "risk_grade": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
@@ -346,79 +741,127 @@
       }
     }
   },
-  "icici_bluechip_nav": {
-    "name": "icici_bluechip_nav",
+  "08_investor_transactions": {
+    "name": "08_investor_transactions",
     "shape": {
-      "rows": 3321,
-      "columns": 7
+      "rows": 32778,
+      "columns": 13
     },
     "duplicate_count": 0,
     "numeric_columns": [
-      "scheme_code",
-      "nav"
+      "amfi_code",
+      "amount_inr",
+      "annual_income_lakh"
     ],
     "object_columns": [
-      "date",
-      "fund_house",
-      "scheme_name",
-      "scheme_category",
-      "scheme_type"
+      "investor_id",
+      "transaction_date",
+      "transaction_type",
+      "state",
+      "city",
+      "city_tier",
+      "age_group",
+      "gender",
+      "payment_mode",
+      "kyc_status"
     ],
     "datetime_columns": [],
     "dtype_issues": [],
     "columns_below_threshold": [],
     "outlier_info": {
-      "scheme_code": {
-        "outlier_count": 0,
-        "lower_fence": 120503.0,
-        "upper_fence": 120503.0,
-        "outlier_pct": 0.0
+      "amfi_code": {
+        "outlier_count": 14047,
+        "lower_fence": 115315.5,
+        "upper_fence": 124159.5,
+        "outlier_pct": 42.85
       },
-      "nav": {
-        "outlier_count": 0,
-        "lower_fence": -36.9094,
-        "upper_fence": 147.6557,
-        "outlier_pct": 0.0
+      "amount_inr": {
+        "outlier_count": 977,
+        "lower_fence": -276103.875,
+        "upper_fence": 468581.125,
+        "outlier_pct": 2.98
+      },
+      "annual_income_lakh": {
+        "outlier_count": 1145,
+        "lower_fence": -29.6,
+        "upper_fence": 77.6,
+        "outlier_pct": 3.49
       }
     },
     "missing_summary": {
-      "scheme_code": {
+      "investor_id": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "transaction_date": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "amfi_code": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "int64"
       },
-      "date": {
+      "transaction_type": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "nav": {
+      "amount_inr": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "int64"
+      },
+      "state": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "city": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "city_tier": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "age_group": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "gender": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "annual_income_lakh": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "float64"
       },
-      "fund_house": {
+      "payment_mode": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "scheme_name": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_category": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_type": {
+      "kyc_status": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
@@ -426,79 +869,98 @@
       }
     }
   },
-  "kotak_bluechip_nav": {
-    "name": "kotak_bluechip_nav",
+  "09_portfolio_holdings": {
+    "name": "09_portfolio_holdings",
     "shape": {
-      "rows": 3315,
-      "columns": 7
+      "rows": 322,
+      "columns": 8
     },
     "duplicate_count": 0,
     "numeric_columns": [
-      "scheme_code",
-      "nav"
+      "amfi_code",
+      "weight_pct",
+      "market_value_cr",
+      "current_price_inr"
     ],
     "object_columns": [
-      "date",
-      "fund_house",
-      "scheme_name",
-      "scheme_category",
-      "scheme_type"
+      "stock_symbol",
+      "stock_name",
+      "sector",
+      "portfolio_date"
     ],
     "datetime_columns": [],
     "dtype_issues": [],
     "columns_below_threshold": [],
     "outlier_info": {
-      "scheme_code": {
+      "amfi_code": {
+        "outlier_count": 138,
+        "lower_fence": 115318.375,
+        "upper_fence": 124157.375,
+        "outlier_pct": 42.86
+      },
+      "weight_pct": {
+        "outlier_count": 8,
+        "lower_fence": -5.8387,
+        "upper_fence": 25.7713,
+        "outlier_pct": 2.48
+      },
+      "market_value_cr": {
         "outlier_count": 0,
-        "lower_fence": 120841.0,
-        "upper_fence": 120841.0,
+        "lower_fence": -931.9975,
+        "upper_fence": 2923.2025,
         "outlier_pct": 0.0
       },
-      "nav": {
+      "current_price_inr": {
         "outlier_count": 0,
-        "lower_fence": -103.1184,
-        "upper_fence": 294.5096,
+        "lower_fence": -3666.4988,
+        "upper_fence": 11662.7912,
         "outlier_pct": 0.0
       }
     },
     "missing_summary": {
-      "scheme_code": {
+      "amfi_code": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "int64"
       },
-      "date": {
+      "stock_symbol": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "nav": {
+      "stock_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "sector": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "weight_pct": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "float64"
       },
-      "fund_house": {
+      "market_value_cr": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
-        "dtype": "object"
+        "dtype": "float64"
       },
-      "scheme_name": {
+      "current_price_inr": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
-        "dtype": "object"
+        "dtype": "float64"
       },
-      "scheme_category": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_type": {
+      "portfolio_date": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
@@ -506,163 +968,49 @@
       }
     }
   },
-  "nippon_largecap_nav": {
-    "name": "nippon_largecap_nav",
+  "10_benchmark_indices": {
+    "name": "10_benchmark_indices",
     "shape": {
-      "rows": 3312,
-      "columns": 7
+      "rows": 8050,
+      "columns": 3
     },
     "duplicate_count": 0,
     "numeric_columns": [
-      "scheme_code",
-      "nav"
+      "close_value"
     ],
     "object_columns": [
       "date",
-      "fund_house",
-      "scheme_name",
-      "scheme_category",
-      "scheme_type"
+      "index_name"
     ],
     "datetime_columns": [],
     "dtype_issues": [],
     "columns_below_threshold": [],
     "outlier_info": {
-      "scheme_code": {
-        "outlier_count": 0,
-        "lower_fence": 118632.0,
-        "upper_fence": 118632.0,
-        "outlier_pct": 0.0
-      },
-      "nav": {
-        "outlier_count": 0,
-        "lower_fence": -27.8945,
-        "upper_fence": 113.1308,
-        "outlier_pct": 0.0
+      "close_value": {
+        "outlier_count": 197,
+        "lower_fence": -32760.99,
+        "upper_fence": 62119.15,
+        "outlier_pct": 2.45
       }
     },
     "missing_summary": {
-      "scheme_code": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "int64"
-      },
       "date": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "object"
       },
-      "nav": {
+      "index_name": {
+        "missing_count": 0,
+        "missing_pct": 0.0,
+        "completeness_pct": 100.0,
+        "dtype": "object"
+      },
+      "close_value": {
         "missing_count": 0,
         "missing_pct": 0.0,
         "completeness_pct": 100.0,
         "dtype": "float64"
-      },
-      "fund_house": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_name": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_category": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_type": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      }
-    }
-  },
-  "sbi_bluechip_nav": {
-    "name": "sbi_bluechip_nav",
-    "shape": {
-      "rows": 3250,
-      "columns": 7
-    },
-    "duplicate_count": 0,
-    "numeric_columns": [
-      "scheme_code",
-      "nav"
-    ],
-    "object_columns": [
-      "date",
-      "fund_house",
-      "scheme_name",
-      "scheme_category",
-      "scheme_type"
-    ],
-    "datetime_columns": [],
-    "dtype_issues": [],
-    "columns_below_threshold": [],
-    "outlier_info": {
-      "scheme_code": {
-        "outlier_count": 0,
-        "lower_fence": 119551.0,
-        "upper_fence": 119551.0,
-        "outlier_pct": 0.0
-      },
-      "nav": {
-        "outlier_count": 0,
-        "lower_fence": 52.3678,
-        "upper_fence": 200.6905,
-        "outlier_pct": 0.0
-      }
-    },
-    "missing_summary": {
-      "scheme_code": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "int64"
-      },
-      "date": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "nav": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "float64"
-      },
-      "fund_house": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_name": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_category": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
-      },
-      "scheme_type": {
-        "missing_count": 0,
-        "missing_pct": 0.0,
-        "completeness_pct": 100.0,
-        "dtype": "object"
       }
     }
   }
